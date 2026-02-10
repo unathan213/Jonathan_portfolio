@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan David S. Urap-Urap | Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">&lt;JD /&gt;</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-right">
+                <a href="#contact" class="btn btn-primary btn-sm">Hire Me</a>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg-elements">
+            <div class="floating-code code-1">&lt;div&gt;</div>
+            <div class="floating-code code-2">function()</div>
+            <div class="floating-code code-3">{...}</div>
+            <div class="floating-code code-4">SELECT *</div>
+            <div class="floating-code code-5">&lt;/&gt;</div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-greeting">
+                    <span class="wave">&#128075;</span> Hello, I'm
+                </div>
+                <h1 class="hero-name">Jonathan David<br><span>Urap-Urap</span></h1>
+                <div class="hero-typewriter">
+                    <span class="typewriter-prefix">I'm a </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-desc">Full Stack Developer with 3+ years of experience in web development, e-commerce management, and HR systems automation. Based in the Philippines.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                    <a href="#experience" class="btn btn-ghost">View My Work</a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:unathan213@gmail.com" class="social-icon" title="Email">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                    </a>
+                    <a href="https://github.com/unathan213" target="_blank" class="social-icon" title="GitHub">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="tel:+639959281216" class="social-icon" title="Phone">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">developer.js</span>
+                    </div>
+                    <div class="code-body">
+                        <pre><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"Jonathan David"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"Full Stack Dev"</span>,
+  <span class="code-prop">skills</span>: [
+    <span class="code-string">"PHP"</span>, <span class="code-string">"JavaScript"</span>,
+    <span class="code-string">"SQL"</span>, <span class="code-string">"HTML/CSS"</span>
+  ],
+  <span class="code-prop">passion</span>: <span class="code-string">"Building things"</span>,
+  <span class="code-prop">available</span>: <span class="code-bool">true</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">01.</span>
+                <h2>About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <p>I'm a <strong>results-driven Full Stack Developer</strong> and Virtual Assistant with 3+ years of proven experience in web development, e-commerce management, and HR systems automation.</p>
+                    <p>I specialize in building scalable web applications using <strong>PHP, JavaScript, and SQL</strong>, with a strong track record in Amazon/Shopify store management and data administration.</p>
+                    <p>I'm highly skilled in remote collaboration, process optimization, and delivering high-quality work for international clients. Committed to continuous learning and excellence in virtual work environments.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <span class="detail-label">Location</span>
+                            <span class="detail-value">Philippines</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Email</span>
+                            <span class="detail-value">unathan213@gmail.com</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Education</span>
+                            <span class="detail-value">BS Information Technology</span>
+                        </div>
+                        <div class="detail">
+                            <span class="detail-label">Availability</span>
+                            <span class="detail-value available">Available for Work</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="3">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="5">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Web Apps Built</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="10000">0</span>
+                        <span class="stat-suffix">+</span>
+                        <span class="stat-label">Orders Processed</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-num" data-target="99">0</span>
+                        <span class="stat-suffix">%</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">02.</span>
+                <h2>Skills & Tools</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Web Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>PHP</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>JavaScript</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML5 & CSS3</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>SQL / MySQL</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Platforms</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Shopify</span>
+                        <span class="skill-tag">Amazon Seller Central</span>
+                        <span class="skill-tag">Google Workspace</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">VS Code</span>
+                        <span class="skill-tag">GitHub</span>
+                        <span class="skill-tag">Database Design</span>
+                        <span class="skill-tag">Data Migration</span>
+                        <span class="skill-tag">SQL Optimization</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Professional Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag pro">Full Stack Development</span>
+                        <span class="skill-tag pro">E-Commerce Management</span>
+                        <span class="skill-tag pro">HR Database Systems</span>
+                        <span class="skill-tag pro">Data Analysis</span>
+                        <span class="skill-tag pro">Virtual Assistance</span>
+                        <span class="skill-tag pro">Quality Assurance</span>
+                        <span class="skill-tag pro">Process Optimization</span>
+                        <span class="skill-tag pro">Sales Tracking & Reporting</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Currently Learning</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag learning">React.js</span>
+                        <span class="skill-tag learning">Node.js</span>
+                        <span class="skill-tag learning">Express.js</span>
+                        <span class="skill-tag learning">MongoDB</span>
+                        <span class="skill-tag learning">Next.js</span>
+                        <span class="skill-tag learning">TypeScript</span>
+                        <span class="skill-tag learning">REST API</span>
+                        <span class="skill-tag learning">Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">03.</span>
+                <h2>Experience</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="timeline">
+
+                <div class="timeline-item">
+                    <div class="timeline-dot current"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Full Stack Developer / Computer Programmer I</h3>
+                                <span class="company">Cavite State University</span>
+                            </div>
+                            <span class="timeline-date">2024 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Developed and maintained enterprise-level HR databases using PHP, JavaScript, and SQL, managing 500+ student records with 99.9% data accuracy</li>
+                            <li>Engineered dynamic web applications that automated HR processes, reducing manual workload by 60%</li>
+                            <li>Designed and optimized complex SQL queries that improved data retrieval speed by 40%</li>
+                            <li>Debugged and enhanced existing systems, reducing system errors by 75%</li>
+                            <li>Collaborated cross-functionally with HR team, increasing department productivity by 50%</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>PHP</span><span>JavaScript</span><span>SQL</span><span>HR Systems</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Virtual Assistant - E-Commerce Specialist</h3>
+                                <span class="company">Lifetime Jewelry (Amazon)</span>
+                            </div>
+                            <span class="timeline-date">2023 - Present</span>
+                        </div>
+                        <ul>
+                            <li>Enhanced product image quality for 500+ SKUs on Shopify, improving customer engagement</li>
+                            <li>Processed and fulfilled 100+ daily orders with 99% accuracy rate</li>
+                            <li>Maintained product catalog in Google Sheets, managing inventory data for 800+ products</li>
+                            <li>Conducted regular website QA checks, identifying 50+ functional issues</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Shopify</span><span>Amazon</span><span>Google Sheets</span><span>QA</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Virtual Assistant - Sales Analyst</h3>
+                                <span class="company">Chef's Path (Amazon)</span>
+                            </div>
+                            <span class="timeline-date">2022 - 2023</span>
+                        </div>
+                        <ul>
+                            <li>Monitored and analyzed sales performance metrics across 200+ products</li>
+                            <li>Generated comprehensive sales reports and dashboards for business strategy</li>
+                            <li>Tracked inventory levels, contributing to 15% revenue growth</li>
+                            <li>Provided data-driven insights to optimize product listings and pricing</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Data Analysis</span><span>Amazon</span><span>Sales Reports</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <div>
+                                <h3>Admin Aide III / Data Encoder</h3>
+                                <span class="company">Cavite State University</span>
+                            </div>
+                            <span class="timeline-date">2023 - 2024</span>
+                        </div>
+                        <ul>
+                            <li>Managed comprehensive employee records, contracts, and benefits administration</li>
+                            <li>Maintained HR databases with 100% compliance with university policies</li>
+                            <li>Processed payroll data and reports for 300+ employees monthly</li>
+                            <li>Streamlined data entry, reducing processing time by 30%</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>HR Systems</span><span>Data Entry</span><span>Payroll</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS / ACHIEVEMENTS -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">04.</span>
+                <h2>Key Achievements</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">&#128187;</div>
+                    <h3>5+ Web Applications</h3>
+                    <p>Successfully developed and deployed enterprise web applications for university HR management systems.</p>
+                    <div class="project-tags">
+                        <span>PHP</span><span>JavaScript</span><span>SQL</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">&#128230;</div>
+                    <h3>10,000+ Orders Processed</h3>
+                    <p>Processed e-commerce orders with 99%+ accuracy rate across multiple Amazon and Shopify platforms.</p>
+                    <div class="project-tags">
+                        <span>Amazon</span><span>Shopify</span><span>E-Commerce</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">&#9889;</div>
+                    <h3>60% Workload Reduction</h3>
+                    <p>Reduced HR administrative workload through automation, leave tracking, and contract management systems.</p>
+                    <div class="project-tags">
+                        <span>Automation</span><span>HR Systems</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">&#128202;</div>
+                    <h3>800+ Product Catalog</h3>
+                    <p>Managed extensive product catalogs across Shopify and Amazon platforms with accurate inventory tracking.</p>
+                    <div class="project-tags">
+                        <span>Shopify</span><span>Inventory</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">&#127919;</div>
+                    <h3>100% On-Time Delivery</h3>
+                    <p>Achieved perfect on-time delivery rate for all assigned projects, tasks, and client deliverables.</p>
+                    <div class="project-tags">
+                        <span>Project Management</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">&#128200;</div>
+                    <h3>99.9% Data Accuracy</h3>
+                    <p>Maintained near-perfect data accuracy across all database management responsibilities and systems.</p>
+                    <div class="project-tags">
+                        <span>Database</span><span>Quality</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCATION & CERTS -->
+    <section class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">05.</span>
+                <h2>Education & Certifications</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="edu-grid">
+                <div class="edu-card">
+                    <div class="edu-icon">&#127891;</div>
+                    <div class="edu-info">
+                        <h3>Bachelor of Science in Information Technology</h3>
+                        <span class="edu-school">Cavite State University - Rosario Campus</span>
+                        <span class="edu-year">2018 - 2023</span>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-icon">&#127979;</div>
+                    <div class="edu-info">
+                        <h3>General Academics (Senior High School)</h3>
+                        <span class="edu-school">Luis Y Ferrer Jr. Senior High School</span>
+                        <span class="edu-year">2016 - 2018</span>
+                    </div>
+                </div>
+            </div>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">FCC</div>
+                    <div>
+                        <h4>JavaScript Algorithms and Data Structures</h4>
+                        <span>FreeCodeCamp.org | 2023</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">DICT</div>
+                    <div>
+                        <h4>Web Development & Cloud Computing</h4>
+                        <span>DICT | 2023</span>
+                    </div>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">DICT</div>
+                    <div>
+                        <h4>Data Privacy & Google Workspace</h4>
+                        <span>DICT | 2023</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-num">06.</span>
+                <h2>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <p class="contact-intro">I'm currently available for freelance work, full-time remote positions, and virtual assistance roles. If you have a project or opportunity, let's talk!</p>
+                <div class="contact-cards">
+                    <a href="mailto:unathan213@gmail.com" class="contact-card">
+                        <div class="contact-card-icon">&#128233;</div>
+                        <h3>Email Me</h3>
+                        <p>unathan213@gmail.com</p>
+                    </a>
+                    <a href="tel:+639959281216" class="contact-card">
+                        <div class="contact-card-icon">&#128222;</div>
+                        <h3>Call Me</h3>
+                        <p>+63 995-928-1216</p>
+                    </a>
+                    <a href="https://github.com/unathan213" target="_blank" class="contact-card">
+                        <div class="contact-card-icon">&#128187;</div>
+                        <h3>GitHub</h3>
+                        <p>github.com/unathan213</p>
+                    </a>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Project Inquiry">
+                    </div>
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea rows="5" placeholder="Tell me about your project..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <span class="logo">&lt;JD /&gt;</span>
+                <p>Designed & Built by Jonathan David S. Urap-Urap</p>
+                <div class="footer-links">
+                    <a href="https://github.com/unathan213" target="_blank">GitHub</a>
+                    <a href="mailto:unathan213@gmail.com">Email</a>
+                    <a href="tel:+639959281216">Phone</a>
+                </div>
+                <p class="copyright">&copy; 2026 All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
