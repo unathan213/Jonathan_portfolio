@@ -563,6 +563,30 @@ img { max-width: 100%; display: block; }
     color: #C792EA;
 }
 
+/* ===== SERVICES ===== */
+.services {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.services .project-card {
+    background: var(--bg);
+}
+
+.services .project-card:hover {
+    border-color: var(--primary);
+}
+
+/* ===== TESTIMONIALS ===== */
+.testimonials {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.testimonials .project-card {
+    background: var(--bg);
+}
+
 /* ===== EXPERIENCE ===== */
 .experience {
     padding: 100px 0;
