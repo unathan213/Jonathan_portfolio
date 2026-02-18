@@ -1137,3 +1137,70 @@ img { max-width: 100%; display: block; }
     .projects-grid { grid-template-columns: 1fr; }
     .achievements-grid { grid-template-columns: 1fr 1fr; }
 }
+
+/* ===== FLAGSHIP PROJECT CARD ===== */
+.project-card.flagship {
+    border-top: 3px solid var(--primary);
+    background: linear-gradient(135deg, var(--bg-light) 0%, rgba(100, 255, 218, 0.04) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card.flagship::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0;
+    width: 120px; height: 120px;
+    background: radial-gradient(circle, rgba(100, 255, 218, 0.08) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.project-live-tag {
+    display: inline-block;
+    font-size: 0.62rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 4px 10px;
+    background: rgba(100, 255, 218, 0.12);
+    color: var(--primary);
+    border: 1px solid rgba(100, 255, 218, 0.3);
+    border-radius: 2px;
+    margin-bottom: 10px;
+}
+
+/* Live badge on project links */
+.project-link.live-badge {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 4px 10px;
+    border: 1px solid rgba(100, 255, 218, 0.4);
+    border-radius: 20px;
+    color: var(--primary);
+    transition: var(--transition);
+}
+
+.project-link.live-badge:hover {
+    background: rgba(100, 255, 218, 0.1);
+    border-color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.project-link.live-badge::before {
+    content: '';
+    display: inline-block;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--primary);
+    box-shadow: 0 0 6px var(--primary);
+    animation: pulseDot 2s ease infinite;
+}
+
+@keyframes pulseDot {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50% { opacity: 0.5; transform: scale(0.8); }
+}
